@@ -1,0 +1,36 @@
+{
+  "name": "project-multilevel-index",
+  "version": "1.0.3",
+  "description": "分形多级索引系统 - 受《哥德尔、埃舍尔、巴赫》启发的自指文档系统。自动维护 PROJECT_INDEX、FOLDER_INDEX 和文件头注释，实现代码与文档的完美同步。",
+  "author": {
+    "name": "Claude Code Community",
+    "email": "noreply@claudate.dev"
+  },
+  "homepage": "https://github.com/Claudate/project-multilevel-index#readme",
+  "repository": "https://github.com/Claudate/project-multilevel-index",
+  "license": "MIT",
+  "keywords": [
+    "claude-code-plugin",
+    "documentation",
+    "index",
+    "fractal",
+    "self-reference",
+    "dependency-graph",
+    "mermaid",
+    "GEB",
+    "architecture",
+    "auto-update",
+    "i18n",
+    "typescript",
+    "javascript",
+    "python"
+  ],
+  "skills": [
+    "./skills/project-multilevel-index/"
+  ],
+  "commands": [
+    "./commands/init-index.md",
+    "./commands/update-index.md",
+    "./commands/check-index.md"
+  ]
+}
