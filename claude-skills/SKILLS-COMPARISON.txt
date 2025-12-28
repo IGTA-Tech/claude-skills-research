@@ -1,0 +1,310 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║              COMPLETE CLAUDE SKILLS COLLECTION                            ║
+║          25 Skills: 10 OneWave AI + 15 Official Anthropic                ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌊 ONEWAVE AI CUSTOM SKILLS (10)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Premium business-focused skills built by OneWave AI
+
+🎨 DESIGN & DEVELOPMENT (3)
+────────────────────────────────────────────────────────────────────────────
+  1. 🌊 screenshot-to-code (1.6 KB)
+     Convert UI screenshots → HTML/CSS/React/Vue code
+     Trigger: "Convert this screenshot to React code"
+
+  2. 🌊 code-review-pro (2.7 KB)
+     Security, performance & quality code analysis
+     Trigger: "Review this code for security"
+
+  3. 🌊 regex-debugger (2.6 KB)
+     Visual regex debugging & explanation
+     Trigger: "Debug this regex pattern"
+
+📊 CONTENT & MARKETING (4)
+────────────────────────────────────────────────────────────────────────────
+  4. 🌊 seo-optimizer (3.2 KB)
+     Keyword analysis, readability & meta generation
+     Trigger: "Optimize this blog post for SEO"
+
+  5. 🌊 social-repurposer (2.6 KB)
+     Cross-platform content (Twitter, LinkedIn, Instagram)
+     Trigger: "Turn this into a Twitter thread"
+
+  6. 🌊 podcast-content-suite (3.8 KB)
+     Podcast → blog, social, newsletter, show notes
+     Trigger: "Repurpose this podcast transcript"
+
+  7. 🌊 reddit-analyzer (2.4 KB)
+     Sentiment analysis & community insights
+     Trigger: "What does Reddit think about X?"
+
+💼 BUSINESS & PRODUCTIVITY (3)
+────────────────────────────────────────────────────────────────────────────
+  8. 🌊 meeting-intelligence (2.3 KB)
+     Extract decisions, action items & blockers
+     Trigger: "Extract action items from this meeting"
+
+  9. 🌊 financial-parser (2.4 KB)
+     Parse invoices, receipts & bank statements
+     Trigger: "Parse this invoice"
+
+ 10. 🌊 contract-analyzer (3.7 KB)
+     Review contracts for risks & concerning clauses
+     Trigger: "Review this contract"
+
+TOTAL: 10 skills | ~30 KB | ZIP format
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🏢 OFFICIAL ANTHROPIC SKILLS (15)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Official skills maintained by Anthropic
+
+🎨 CREATIVE & DESIGN (3)
+────────────────────────────────────────────────────────────────────────────
+ 11. 🏢 algorithmic-art
+     Generate art using p5.js with seeded randomness
+
+ 12. 🏢 canvas-design
+     Create visual art in PNG/PDF formats
+
+ 13. 🏢 slack-gif-creator
+     Produce animated GIFs optimized for Slack
+
+💻 DEVELOPMENT & TECHNICAL (3)
+────────────────────────────────────────────────────────────────────────────
+ 14. 🏢 artifacts-builder
+     Build complex HTML artifacts with React & Tailwind
+
+ 15. 🏢 mcp-builder
+     Create MCP servers for external API integration
+
+ 16. 🏢 webapp-testing
+     Test web applications using Playwright
+
+🎨 STYLING & BRANDING (3)
+────────────────────────────────────────────────────────────────────────────
+ 17. 🏢 brand-guidelines
+     Apply Anthropic's official brand colors & typography
+
+ 18. 🏢 internal-comms
+     Write status reports, newsletters & FAQs
+
+ 19. 🏢 theme-factory
+     Style artifacts with 10 preset professional themes
+
+📄 DOCUMENT SKILLS (4)
+────────────────────────────────────────────────────────────────────────────
+ 20. 🏢 docx
+     Create/edit Word documents with tracked changes
+
+ 21. 🏢 pdf
+     PDF manipulation, text extraction & form handling
+
+ 22. 🏢 pptx
+     Create PowerPoint presentations with layouts
+
+ 23. 🏢 xlsx
+     Excel spreadsheet operations with formulas
+
+🛠️ META SKILLS (2)
+────────────────────────────────────────────────────────────────────────────
+ 24. 🏢 skill-creator
+     Instructions for creating effective skills
+
+ 25. 🏢 template-skill
+     Basic starting template for new skill development
+
+TOTAL: 15 skills | Directory format | From GitHub
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 COMPARISON TABLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Feature             │ 🌊 OneWave AI       │ 🏢 Anthropic
+────────────────────┼────────────────────┼────────────────────
+Count               │ 10 skills          │ 15 skills
+Format              │ ZIP files          │ Directories
+Size                │ ~30 KB total       │ Varies
+Focus               │ Business           │ Creative/Technical
+Docs                │ Comprehensive      │ Official
+Source              │ Custom-built       │ GitHub official
+Installation        │ Unzip & copy       │ Copy directories
+Use Case            │ Production work    │ Creative & docs
+Quality             │ Production-tested  │ Official
+Updates             │ Manual             │ Git pull
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 QUICK IDENTIFICATION GUIDE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+HOW TO TELL THEM APART:
+
+🌊 OneWave AI Skills:
+  ✅ In root directory as .zip files
+  ✅ File names: screenshot-to-code.zip, seo-optimizer.zip, etc.
+  ✅ Business-focused (SEO, meetings, contracts, finance)
+  ✅ Production-ready for real-world use
+  ✅ ~30 KB total package
+
+🏢 Official Anthropic Skills:
+  ✅ In official-anthropic-skills/ subdirectory
+  ✅ Directories: algorithmic-art/, docx/, pdf/, etc.
+  ✅ Creative/technical focus (art, docs, artifacts)
+  ✅ From GitHub: github.com/anthropics/skills
+  ✅ Various sizes per skill
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📂 DIRECTORY STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+claude-skills/
+├── 🌊 ONEWAVE AI SKILLS (root directory)
+│   ├── screenshot-to-code.zip
+│   ├── reddit-analyzer.zip
+│   ├── seo-optimizer.zip
+│   ├── meeting-intelligence.zip
+│   ├── financial-parser.zip
+│   ├── code-review-pro.zip
+│   ├── regex-debugger.zip
+│   ├── social-repurposer.zip
+│   ├── contract-analyzer.zip
+│   └── podcast-content-suite.zip
+│
+├── 🏢 OFFICIAL ANTHROPIC SKILLS (subdirectory)
+│   └── official-anthropic-skills/
+│       ├── algorithmic-art/
+│       ├── artifacts-builder/
+│       ├── brand-guidelines/
+│       ├── canvas-design/
+│       ├── document-skills/
+│       │   ├── docx/
+│       │   ├── pdf/
+│       │   ├── pptx/
+│       │   └── xlsx/
+│       ├── internal-comms/
+│       ├── mcp-builder/
+│       ├── skill-creator/
+│       ├── slack-gif-creator/
+│       ├── template-skill/
+│       ├── theme-factory/
+│       └── webapp-testing/
+│
+└── 📚 DOCUMENTATION
+    ├── START-HERE.md
+    ├── COMPLETE-SKILLS-CATALOG.md
+    ├── SKILLS-COMPARISON.txt ← You are here
+    ├── README.md
+    └── [other guides]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚡ INSTALLATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+INSTALL ONEWAVE AI SKILLS (business essentials):
+────────────────────────────────────────────────────────────────────────────
+  $ mkdir -p ~/.claude/skills
+  $ unzip screenshot-to-code.zip
+  $ cp -r screenshot-to-code ~/.claude/skills/
+
+INSTALL ANTHROPIC SKILLS (creative & technical):
+────────────────────────────────────────────────────────────────────────────
+  $ cp -r official-anthropic-skills/algorithmic-art ~/.claude/skills/
+  $ cp -r official-anthropic-skills/docx ~/.claude/skills/
+
+INSTALL ALL AT ONCE:
+────────────────────────────────────────────────────────────────────────────
+  # OneWave AI skills
+  $ for file in *.zip; do
+      unzip -q "$file"
+      cp -r "${file%.zip}" ~/.claude/skills/
+    done
+
+  # Official Anthropic skills
+  $ cp -r official-anthropic-skills/* ~/.claude/skills/
+
+  # Verify
+  $ ls ~/.claude/skills/
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 USE CASES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FOR DEVELOPERS:
+  🌊 screenshot-to-code     - UI to code conversion
+  🌊 code-review-pro        - Security & performance
+  🌊 regex-debugger         - Pattern debugging
+  🏢 artifacts-builder      - Complex artifacts
+  🏢 webapp-testing         - Automated testing
+  🏢 mcp-builder            - API integration
+
+FOR CONTENT CREATORS:
+  🌊 seo-optimizer          - Search optimization
+  🌊 social-repurposer      - Multi-platform content
+  🌊 podcast-content-suite  - Podcast marketing
+  🌊 reddit-analyzer        - Social insights
+  🏢 internal-comms         - Communications
+  🏢 theme-factory          - Visual styling
+
+FOR BUSINESS PROFESSIONALS:
+  🌊 meeting-intelligence   - Meeting analysis
+  🌊 financial-parser       - Invoice processing
+  🌊 contract-analyzer      - Legal review
+  🏢 docx                   - Word documents
+  🏢 xlsx                   - Spreadsheets
+  🏢 pptx                   - Presentations
+  🏢 pdf                    - PDF handling
+
+FOR DESIGNERS:
+  🌊 screenshot-to-code     - Design to code
+  🏢 algorithmic-art        - Generative art
+  🏢 canvas-design          - Visual design
+  🏢 slack-gif-creator      - GIF creation
+  🏢 brand-guidelines       - Brand consistency
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💡 PRO TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. START WITH ONEWAVE AI SKILLS
+   Business-focused, production-ready, immediate value
+
+2. ADD ANTHROPIC SKILLS FOR CREATIVITY
+   Art, documents, technical tools complement business skills
+
+3. MIX AND MATCH
+   Example: Use algorithmic-art (🏢) for visuals, then
+   screenshot-to-code (🌊) to build, then social-repurposer (🌊) to market
+
+4. INSTALL AS NEEDED
+   Don't install all 25 at once - start with 3-5 you'll use most
+
+5. COMPLEMENT EACH OTHER
+   🌊 = Business workflows
+   🏢 = Creative & technical tools
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 STATISTICS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Total Skills:           25
+OneWave AI:             10 (40%)
+Official Anthropic:     15 (60%)
+
+By Category:
+  Development:           8 skills
+  Content & Marketing:   7 skills
+  Business:              6 skills
+  Creative:              4 skills
+
+Total Size:            ~30-50 KB (incredibly lightweight!)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌊 = OneWave AI Custom Skill (business-focused, production-ready)
+🏢 = Official Anthropic Skill (creative, technical, maintained by Anthropic)
+
+Ready to install? Pick a skill and start using it! 🚀
