@@ -1,0 +1,43 @@
+{
+  "name": "cc-polymath",
+  "version": "2.0.0",
+  "description": "447 atomic, production-ready skills with gateway-based progressive loading for Claude Code. 31+ domains including API design, databases, ML, diagrams (Mermaid), mathematics, testing, infrastructure, cryptography, protocols, and more. Context-efficient three-tier architecture with auto-discovery gateways.",
+  "author": {
+    "name": "rand"
+  },
+  "homepage": "https://github.com/rand/cc-polymath",
+  "repository": "https://github.com/rand/cc-polymath",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "gateway",
+    "progressive-loading",
+    "diagrams",
+    "mermaid",
+    "ml",
+    "api",
+    "database",
+    "testing",
+    "infrastructure",
+    "mathematics",
+    "debugging",
+    "frontend",
+    "backend",
+    "rust",
+    "python",
+    "zig",
+    "cryptography",
+    "protocols",
+    "engineering",
+    "mobile",
+    "cloud",
+    "devops",
+    "security",
+    "performance",
+    "observability",
+    "pyo3",
+    "dspy",
+    "context-efficient"
+  ],
+  "commands": "./commands"
+}
