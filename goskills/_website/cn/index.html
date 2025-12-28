@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoSkills - Go 语言实现的 Claude Skills 工具集</title>
+    <meta name="description" content="一个强大的 Go 语言库，用于解析、管理和执行 Claude Skill 包。">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-cube"></i>
+                <span>GoSkills</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#features">特性</a>
+                <a href="#installation">安装</a>
+                <a href="#usage">使用</a>
+                <a href="../index.html">English</a>
+                <a href="https://github.com/smallnest/goskills" target="_blank" class="github-icon">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>在 Go 应用中解锁<br>Claude Skills 的潜能</h1>
+            <p class="hero-subtitle">
+                一个强大的工具包，用于解析、管理和执行 Claude Skill 包。
+                标准化您的智能代理工作流，支持任意大语言模型。
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="#installation" class="btn btn-primary">快速开始</a>
+                <a href="https://github.com/smallnest/goskills" class="btn btn-secondary">查看 GitHub</a>
+            </div>
+
+            <div class="code-preview">
+<pre><code><span class="comment"># 安装 CLI 工具</span>
+<span class="command">brew install smallnest/goskills/goskills</span>
+
+<span class="comment"># 使用你喜欢的 LLM 运行技能</span>
+<span class="command">export OPENAI_API_KEY=sk-...</span>
+<span class="command">export OPENAI_MODEL="deepseek-chat"</span>
+<span class="command">export OPENAI_API_BASE="https://api.deepseek.com/v1"</span>
+<span class="command">goskills run "创建一个 todo 应用的 React 组件"</span></code></pre>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>一应俱全</h2>
+                    <p>专为构建下一代 AI 代理的开发者设计。</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>技能解析器</h3>
+                        <p>轻松解析 `SKILL.md` 文件。根据官方规范提取元数据、指令和资源文件。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3>通用运行器</h3>
+                        <p>支持使用任意兼容 OpenAI 接口的大模型（如 GPT-4, DeepSeek 等）执行技能，而不仅仅是 Claude。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-toolbox"></i></div>
+                        <h3>内置工具集</h3>
+                        <p>包含标准工具库：Shell 命令执行、Python 运行时、文件 I/O、网络搜索等。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3>MCP 集成</h3>
+                        <p>全面支持模型上下文协议（MCP），将您的代理连接到外部数据和服务。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3>开发者 CLI</h3>
+                        <p>使用 `goskills` 命令行工具直接在终端中检查、调试和运行技能。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-brands fa-golang"></i></div>
+                        <h3>纯 Go 实现</h3>
+                        <p>高性能、静态类型，易于部署。构建为可重用的 Go 模块，方便集成到您的项目中。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>安装</h2>
+                    <p>几秒钟内即可运行。</p>
+                </div>
+                
+                <div class="install-grid">
+                    <div class="install-card">
+                        <h3><i class="fa-brands fa-apple"></i> Homebrew (macOS/Linux)</h3>
+                        <pre><code>brew tap smallnest/goskills
+brew install goskills</code></pre>
+                    </div>
+                    
+                    <div class="install-card">
+                        <h3><i class="fa-brands fa-golang"></i> Go Install</h3>
+                        <pre><code>go install github.com/smallnest/goskills/cmd/goskills@latest
+go install github.com/smallnest/goskills/cmd/goskills-cli@latest</code></pre>
+                    </div>
+
+                    <div class="install-card">
+                        <h3><i class="fa-solid fa-download"></i> 源码安装</h3>
+                        <pre><code>git clone https://github.com/smallnest/goskills.git
+cd goskills
+make</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="usage" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>使用指南</h2>
+                    <p>三个强大的工具，满足不同需求。</p>
+                </div>
+
+                <div class="usage-block">
+                    <div class="usage-header">
+                        <h3>1. 运行器 (`goskills`)</h3>
+                        <p>模拟 Claude 技能使用工作流。它根据您的自然语言提示选择并执行技能。</p>
+                    </div>
+                    <div class="code-preview">
+<pre><code><span class="comment"># 1. 设置环境变量</span>
+<span class="command">export OPENAI_API_KEY="sk-..."</span>
+<span class="command">export OPENAI_MODEL="gpt-4o"</span> <span class="comment"># 可选，默认为 gpt-4o</span>
+<span class="command">export OPENAI_API_BASE="https://api.openai.com/v1"</span> <span class="comment"># 可选，默认为 OPENAI API URL</span>
+
+
+<span class="comment"># 2. 执行任务（例如：生成艺术作品）</span>
+<span class="command">goskills run "创建一个生成抽象艺术的算法"</span>
+
+<span class="comment"># 3. 使用自定义模型（例如：DeepSeek）</span>
+<span class="command">goskills run --model deepseek-v3 --api-base https://api.deepseek.com/v1 "您的提示词"</span></code></pre>
+                    </div>
+                </div>
+
+                <div class="usage-block">
+                    <div class="usage-header">
+                        <h3>2. 下载器 (`goskills download`)</h3>
+                        <p>直接从 GitHub 仓库下载技能到您的本地技能目录。</p>
+                    </div>
+                    <div class="code-preview">
+<pre><code><span class="comment"># 从 GitHub 下载技能</span>
+<span class="command">goskills download https://github.com/ComposioHQ/awesome-claude-skills/tree/master/meeting-insights-analyzer</span>
+
+<span class="comment"># 技能被下载到 ~/.goskills/skills</span>
+<span class="command">ls ~/.goskills/skills</span></code></pre>
+                    </div>
+                </div>
+
+                <div class="usage-block">
+                    <div class="usage-header">
+                        <h3>3. 管理器 (`goskills-cli`)</h3>
+                        <p>检查、解析和验证您本地的技能定义。</p>
+                    </div>
+                    <div class="code-preview">
+<pre><code><span class="comment"># 列出目录中的所有技能</span>
+<span class="command">goskills-cli list ./skills</span>
+
+<span class="comment"># 检查特定技能的结构</span>
+<span class="command">goskills-cli parse ./skills/my-new-skill</span>
+
+<span class="comment"># 按关键词搜索技能</span>
+<span class="command">goskills-cli search ./skills "web scraping"</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                &copy; 2025 GoSkills. 基于 MIT 协议发布。
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/smallnest/goskills">GitHub</a>
+                <a href="https://github.com/smallnest/goskills/blob/main/LICENSE">License</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
