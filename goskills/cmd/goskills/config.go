@@ -1,0 +1,130 @@
+package main
+
+import (
+	"os"
+	"path/filepath"
+	"strings"
+
+	"github.com/spf13/cobra"
+)
+
+// Config holds the application configuration
+type Config struct {
+	SkillsDir        string
+	Model            string
+	APIBase          string
+	APIKey           string
+	AutoApproveTools bool
+	AllowedScripts   []string
+	Verbose          int
+	Debug            bool
+	Loop             bool
+	SkillName        string
+	McpConfig        string
+}
+
+// loadConfig loads configuration from flags and environment variables
+func loadConfig(cmd *cobra.Command) (*Config, error) {
+	cfg := &Config{}
+
+	// 1. Load from flags (if set)
+	var err error
+	cfg.SkillsDir, err = cmd.Flags().GetString("skills-dir")
+	if err != nil {
+		return nil, err
+	}
+	cfg.Model, err = cmd.Flags().GetString("model")
+	if err != nil {
+		return nil, err
+	}
+	cfg.APIBase, err = cmd.Flags().GetString("api-base")
+	if err != nil {
+		return nil, err
+	}
+	cfg.APIKey, err = cmd.Flags().GetString("api-key")
+	if err != nil {
+		return nil, err
+	}
+	cfg.AutoApproveTools, err = cmd.Flags().GetBool("auto-approve")
+	if err != nil {
+		return nil, err
+	}
+	cfg.Verbose, err = cmd.Flags().GetCount("verbose")
+	if err != nil {
+		return nil, err
+	}
+	cfg.Debug, err = cmd.Flags().GetBool("debug")
+	if err != nil {
+		return nil, err
+	}
+	cfg.Loop, err = cmd.Flags().GetBool("loop")
+	if err != nil {
+		return nil, err
+	}
+	cfg.SkillName, err = cmd.Flags().GetString("skill")
+	if err != nil {
+		return nil, err
+	}
+	cfg.AllowedScripts, err = cmd.Flags().GetStringSlice("allow-scripts")
+	if err != nil {
+		return nil, err
+	}
+	cfg.McpConfig, err = cmd.Flags().GetString("mcp-config")
+	if err != nil {
+		return nil, err
+	}
+
+	// 2. Load from environment variables (fallback if flag not set or empty, except bools)
+	// Note: Cobra flags usually handle defaults, but we check env vars here for precedence if needed
+	// or simply rely on Cobra's binding if we bound them.
+	// Here we manually check env vars for critical items if flags are default/empty.
+
+	if cfg.APIKey == "" {
+		cfg.APIKey = os.Getenv("OPENAI_API_KEY")
+	}
+	if cfg.APIBase == "" {
+		cfg.APIBase = os.Getenv("OPENAI_API_BASE")
+	}
+	if cfg.Model == "" {
+		cfg.Model = os.Getenv("OPENAI_MODEL")
+	}
+	cfg.APIBase = strings.TrimRight(cfg.APIBase, "/")
+
+	// Resolve SkillsDir to absolute path and expand ~
+	if cfg.SkillsDir == "" {
+		// Prefer local testdata when present (useful for tests); otherwise use user default
+		if _, err := os.Stat("~/.goskills/skills"); err == nil {
+			cfg.SkillsDir = "~/.goskills/skills"
+		}
+	}
+	if strings.HasPrefix(cfg.SkillsDir, "~") {
+		home, err := os.UserHomeDir()
+		if err != nil {
+			return nil, err
+		}
+		cfg.SkillsDir = filepath.Join(home, cfg.SkillsDir[1:])
+	}
+	absSkillsDir, err := filepath.Abs(cfg.SkillsDir)
+	if err != nil {
+		return nil, err
+	}
+	cfg.SkillsDir = absSkillsDir
+
+	return cfg, nil
+}
+
+// SetupFlags registers the flags with the command
+func setupFlags(cmd *cobra.Command) {
+	// Default to empty string; loadConfig will set the actual default (~/.goskills/skills or testdata/skills for development)
+	cmd.Flags().StringP("skills-dir", "d", "~/.goskills/skills", "Path to the skills directory (default: ~/.goskills/skills)")
+	cmd.Flags().StringP("model", "m", "", "OpenAI-compatible model name (falls back to OPENAI_MODEL env var)")
+	cmd.Flags().StringP("api-base", "b", "", "OpenAI-compatible API base URL (falls back to OPENAI_API_BASE env var)")
+	cmd.Flags().StringP("api-key", "k", "", "OpenAI-compatible API key (falls back to OPENAI_API_KEY env var)")
+	cmd.Flags().Bool("auto-approve", true, "Auto-approve all tool calls (WARNING: potentially unsafe)")
+	cmd.Flags().StringSlice("allow-scripts", nil, "Comma-separated list of allowed script names (e.g. 'run_myscript_py')")
+	cmd.Flags().CountP("verbose", "v", "Enable verbose output (-v for basic, -vv for detailed)")
+	cmd.Flags().BoolP("debug", "D", false, "Enable debug output (print LLM requests/responses)")
+	cmd.Flags().BoolP("loop", "l", false, "Enable interactive loop mode")
+	cmd.Flags().String("skill", "", "Force specific skill to use (skip LLM selection)")
+	cmd.Flags().String("mcp-config", "", "Path to MCP configuration file")
+}

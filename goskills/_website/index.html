@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoSkills - Claude Skills for Go</title>
+    <meta name="description" content="A powerful Go library to parse, manage, and execute Claude Skill packages.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-cube"></i>
+                <span>GoSkills</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#installation">Installation</a>
+                <a href="#usage">Usage</a>
+                <a href="cn/index.html">中文</a>
+                <a href="https://github.com/smallnest/goskills" target="_blank" class="github-icon">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Unlock Claude Skills<br>in your Go Applications</h1>
+            <p class="hero-subtitle">
+                A robust toolkit to parse, manage, and execute Claude Skill packages with any LLM.
+                Standardize your agentic workflows.
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="#installation" class="btn btn-primary">Get Started</a>
+                <a href="https://github.com/smallnest/goskills" class="btn btn-secondary">View on GitHub</a>
+            </div>
+
+            <div class="code-preview">
+<pre><code><span class="comment"># Install the CLI</span>
+<span class="command">brew install smallnest/goskills/goskills</span>
+
+<span class="comment"># Run a skill with your favorite LLM</span>
+<span class="command">export OPENAI_API_KEY=sk-...</span>
+<span class="command">export OPENAI_MODEL="deepseek-chat"</span>
+<span class="command">export OPENAI_API_BASE="https://api.deepseek.com/v1"</span>
+<span class="command">goskills run "create a react component for a todo app"</span></code></pre>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Everything you need</h2>
+                    <p>Designed for developers building the next generation of AI agents.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Skill Parser</h3>
+                        <p>Effortlessly parse `SKILL.md` files. Extract metadata, instructions, and resource files according to official specifications.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3>Universal Runner</h3>
+                        <p>Execute skills with any OpenAI-compatible LLM (GPT-4, DeepSeek, etc.), not just Claude.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-toolbox"></i></div>
+                        <h3>Built-in Tools</h3>
+                        <p>Includes a standard library of tools: Shell execution, Python runtime, File I/O, Web Search, and more.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3>MCP Integration</h3>
+                        <p>Full support for the Model Context Protocol (MCP) to connect your agents to external data and services.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3>Developer CLI</h3>
+                        <p>Inspect, debug, and run skills directly from your terminal with the `goskills` command-line tool.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-brands fa-golang"></i></div>
+                        <h3>Pure Go</h3>
+                        <p>High-performance, statically typed, and easy to deploy. Built as a reusable Go module for your projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Installation</h2>
+                    <p>Get up and running in seconds.</p>
+                </div>
+                
+                <div class="install-grid">
+                    <div class="install-card">
+                        <h3><i class="fa-brands fa-apple"></i> Homebrew (macOS/Linux)</h3>
+                        <pre><code>brew tap smallnest/goskills
+brew install goskills</code></pre>
+                    </div>
+                    
+                    <div class="install-card">
+                        <h3><i class="fa-brands fa-golang"></i> Go Install</h3>
+                        <pre><code>go install github.com/smallnest/goskills/cmd/goskills@latest
+go install github.com/smallnest/goskills/cmd/goskills-cli@latest</code></pre>
+                    </div>
+
+                    <div class="install-card">
+                        <h3><i class="fa-solid fa-download"></i> From Source</h3>
+                        <pre><code>git clone https://github.com/smallnest/goskills.git
+cd goskills
+make</code></pre>
+                    </div>
+                </div>
+            </div>
+      </section>
+
+        <section id="usage" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Usage</h2>
+                    <p>Three powerful tools for different needs.</p>
+                </div>
+
+                <div class="usage-block">
+                    <div class="usage-header">
+                        <h3>1. The Runner (`goskills`)</h3>
+                        <p>Simulates the Claude skill-use workflow. It selects and executes skills based on your natural language prompts.</p>
+                    </div>
+                    <div class="code-preview">
+<pre><code><span class="comment"># 1. Set up your environment</span>
+<span class="command">export OPENAI_API_KEY="sk-..."</span>
+<span class="command">export OPENAI_MODEL="gpt-4o"</span> <span class="comment"># Optional, defaults to gpt-4o</span>
+<span class="command">export OPENAI_API_BASE="https://api.openai.com/v1"</span> <span class="comment"># Optional, defaults to OPENAI api url</span>
+
+
+
+<span class="comment"># 2. Run a task (e.g., generate art)</span>
+<span class="command">goskills run "create an algorithm that generates abstract art"</span>
+
+<span class="comment"># 3. Use custom models (e.g., DeepSeek)</span>
+<span class="command">goskills run --model deepseek-v3 --api-base https://api.deepseek.com/v1 "your prompt"</span></code></pre>
+                    </div>
+                </div>
+
+                <div class="usage-block">
+                    <div class="usage-header">
+                        <h3>2. The Downloader (`goskills download`)</h3>
+                        <p>Download skills directly from GitHub repositories to your local skills directory.</p>
+                    </div>
+                    <div class="code-preview">
+<pre><code><span class="comment"># Download a skill from GitHub</span>
+<span class="command">goskills download https://github.com/ComposioHQ/awesome-claude-skills/tree/master/meeting-insights-analyzer</span>
+
+<span class="comment"># Skills are downloaded to ~/.goskills/skills</span>
+<span class="command">ls ~/.goskills/skills</span></code></pre>
+                    </div>
+                </div>
+
+                <div class="usage-block">
+                    <div class="usage-header">
+                        <h3>3. The Manager (`goskills-cli`)</h3>
+                        <p>Inspect, parse, and validate your local skill definitions.</p>
+                    </div>
+                    <div class="code-preview">
+<pre><code><span class="comment"># List all skills in a directory</span>
+<span class="command">goskills-cli list ./skills</span>
+
+<span class="comment"># Inspect a specific skill's structure</span>
+<span class="command">goskills-cli parse ./skills/my-new-skill</span>
+
+<span class="comment"># Search for skills by keyword</span>
+<span class="command">goskills-cli search ./skills "web scraping"</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                &copy; 2025 GoSkills. Released under the MIT License.
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/smallnest/goskills">GitHub</a>
+                <a href="https://github.com/smallnest/goskills/blob/main/LICENSE">License</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
